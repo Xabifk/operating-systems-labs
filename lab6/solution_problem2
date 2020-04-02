@@ -1,0 +1,5 @@
+execlp("ls", "ls", "*.c", NULL);
+// p - seach in PATH for the program
+// l - parameters passed as parameters terminated by NULL
+Executes "ls *.c"
+

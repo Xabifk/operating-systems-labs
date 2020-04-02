@@ -1,0 +1,26 @@
+
+int i, j, k;
+
+
+
+i = fork();
+// 2 processes
+// i = child id
+// i = 0
+
+if ((j = fork())) {
+// 4 processes
+// i, j = child id
+// 0, j = child id
+// i, j = 0
+// 0, j = 0
+// if j == 0 if not executed so no child of child of child
+    k = fork();
+// 6 processes, more of the same
+
+}
+
+printf("%d %d %d %d %d", i, j, k, getpid(), getppid());
+// 6 processes - 1 original
+	       - 3 child of original
+	       - 2 child of child
