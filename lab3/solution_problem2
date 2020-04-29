@@ -1,0 +1,4 @@
+1. sed 's/\(^.*$\)/abc\1/g' passwd.fake
+2. sed 's/^$/empty/g' passwd.fake
+3. sed 's/\t/   /g' passwd.fake
+4. sed 's/\(.\)\(.\)\(.\)/\2\3\1/g' passwd.fake
